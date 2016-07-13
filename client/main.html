@@ -1,0 +1,42 @@
+<head>
+  <title>poc</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="eight wide computer six wide tablet two wide mobile column">
+          {{> Navigation}}
+        </div>
+
+        <div class="eight wide computer ten wide tablet fourteen wide mobile column">
+          {{> Main}}
+        </div>
+    </div>
+  </div>
+</template>
+
+<template name="Navigation">
+  <div class="ui menu" style="background: red; color: white;">
+        <a class="item">
+            1
+        </a>
+        <a class="item">
+            2
+        </a>
+        <a class="item">
+            3
+        </a>
+    </div>
+</template>
+
+<template name="Main">
+  <div class="ui segment">
+    <h1>Content</h1>
+    <p>Here is some content</p>
+  </div>
+</template>
