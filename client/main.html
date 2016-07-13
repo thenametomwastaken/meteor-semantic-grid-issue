@@ -10,11 +10,28 @@
     <div class="ui container">
       <div class="ui grid">
         <div class="eight wide computer six wide tablet two wide mobile column">
-          {{> Navigation}}
+
+          <!-- uncomment me and comment the div below and the grid falls over -->
+          <!-- {{> Navigation}} -->
+
+          <div class="ui menu" style="background: red; color: white;">
+            <a class="item">1</a>
+            <a class="item">2</a>
+            <a class="item">3</a>
+          </div>
+
         </div>
 
         <div class="eight wide computer ten wide tablet fourteen wide mobile column">
-          {{> Main}}
+
+          <!-- uncomment me and comment the div below and the grid falls over -->
+          <!-- {{> Main}} -->
+
+          <div class="ui segment">
+            <h1>Content</h1>
+            <p>Here is some content</p>
+          </div>
+
         </div>
     </div>
   </div>
@@ -22,16 +39,10 @@
 
 <template name="Navigation">
   <div class="ui menu" style="background: red; color: white;">
-        <a class="item">
-            1
-        </a>
-        <a class="item">
-            2
-        </a>
-        <a class="item">
-            3
-        </a>
-    </div>
+    <a class="item">1</a>
+    <a class="item">2</a>
+    <a class="item">3</a>
+  </div>
 </template>
 
 <template name="Main">
